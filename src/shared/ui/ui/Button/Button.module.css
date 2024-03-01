@@ -1,0 +1,32 @@
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: var(--font-size-16);
+    text-transform: uppercase;
+    padding: var(--indent-12) var(--indent-20);
+    border-radius: var(--bd-round-small);
+    transition: background-color 0.2s;
+
+    &_theme_blue {
+        background-color: var(--accent-blue);
+        color: var(--fg-bright);
+    }
+
+    &_theme_blue:hover {
+        background-color: var(--accent-blue-dark);
+    }
+
+    &_theme_red {
+        background-color: var(--accent-red);
+        color: var(--fg-bright);
+    }
+
+    &_theme_red:hover {
+        background-color: var(--accent-red-dark);
+    }
+}

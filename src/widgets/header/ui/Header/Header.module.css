@@ -1,0 +1,25 @@
+@import url('../../../../shared/ui/styles/mixins/media.css');
+
+.header {
+    padding-top: var(--indent-5);
+    padding-bottom: var(--indent-5);
+    border-bottom: 1px solid var(--bg-separator);
+
+    &__logo {
+        text-transform: uppercase;
+        font-size: var(--font-size-20);
+    }
+
+    &__buttonWrapper {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__navigation {
+        margin-top: var(--indent-20);
+
+        @include mediaDesktop() {
+            margin-top: 0;
+        }
+    }
+}

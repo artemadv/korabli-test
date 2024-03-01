@@ -1,0 +1,34 @@
+.section {
+    padding-top: var(--indent-30);
+    padding-bottom: var(--indent-30);
+
+    &_theme_withError {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--indent-20);
+    }
+}
+
+.card {
+    margin-top: var(--indent-20);
+}
+
+.buttons {
+    margin-top: var(--indent-30);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--indent-20);
+}
+
+.filterCounts {
+    display: flex;
+    flex-direction: column;
+    gap: var(--indent-5);
+}
+
+.filter {
+    position: sticky;
+    top: 0;
+}

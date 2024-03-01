@@ -1,0 +1,16 @@
+.navigation {
+    overflow-y: auto;
+
+    &__list {
+        display: flex;
+        margin: 0;
+        gap: var(--indent-15);
+    }
+
+    &__fakeLink {
+        display: block;
+        padding: var(--indent-10);
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+}

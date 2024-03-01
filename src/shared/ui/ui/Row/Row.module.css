@@ -1,0 +1,22 @@
+.row {
+    margin-left: calc(var(--indent-10) * -1);
+    margin-right: calc(var(--indent-10) * -1);
+    display: flex;
+    flex-wrap: wrap;
+
+    &_align_start {
+        align-items: start;
+    }
+
+    &_align_center {
+        align-items: center;
+    }
+
+    &_align_end {
+        align-items: end;
+    }
+
+    &_align_normal {
+        align-items: normal;
+    }
+}

@@ -1,0 +1,27 @@
+.filter {
+    background-color: var(--bg-footer);
+
+    &__title {
+        font-size: var(--font-size-20);
+        padding-bottom: var(--indent-10);
+    }
+
+    &__button {
+        width: 100%;
+        margin-top: var(--indent-30);
+    }
+
+    &__fieldset {
+        border-radius: var(--bd-round-medium);
+        padding: var(--indent-15);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--indent-10);
+        border: 1px solid var(--bg-separator);
+        margin-top: var(--indent-20);
+    }
+
+    &__legend {
+        background-color: var(--bg-footer);
+    }
+}

@@ -1,0 +1,6 @@
+.footer {
+    padding-top: var(--indent-30);
+    padding-bottom: var(--indent-30);
+    background-color: var(--bg-footer);
+    border-top: 1px solid var(--bg-separator);
+}

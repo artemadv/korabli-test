@@ -1,0 +1,1 @@
+export { SkeletonCardVehicle } from './SkeletonCardVehicle';

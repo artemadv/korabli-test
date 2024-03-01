@@ -1,0 +1,36 @@
+.label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-16);
+    gap: var(--indent-15);
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        width: 18px;
+        height: 18px;
+        border: 1px solid var(--fg-bright);
+        border-radius: var(--bd-round-small);
+    }
+
+    &:hover::before {
+        border-color: var(--fg-light);
+    }
+
+    &_theme_isChecked::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        z-index: 1;
+        background-color: var(--fg-bright);
+    }
+}
+
+.input {
+    display: none;
+}

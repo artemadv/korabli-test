@@ -1,0 +1,47 @@
+:root {
+    /* size */
+    --heignt-card: 373px;
+    --width-filter: 350px;
+    --width-content: 1780px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-h1: 36px;
+    --bd-round-small: 2px;
+    --bd-round-medium: 4px;
+
+    /* color */
+    --accent-blue: #05f;
+    --accent-blue-dark: #0040c0;
+    --accent-red: #fa1437;
+    --accent-red-dark: #c1112c;
+    --bg-main: rgb(1 10 25);
+    --fg-light: #e5e5e5;
+    --fg-bright: #fff;
+    --bg-footer: #010a19;
+    --bg-separator: rgba(255 255 255 / 12%);
+
+    /* indents */
+    --indent-5: 5px;
+    --indent-10: 10px;
+    --indent-12: 12px;
+    --indent-15: 15px;
+    --indent-20: 20px;
+    --indent-30: 30px;
+    --indent-50: 50px;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--fg-light);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-optical-sizing: auto;
+    font-size: var(--font-size-16);
+    font-weight: 400;
+}

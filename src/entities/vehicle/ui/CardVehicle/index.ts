@@ -1,0 +1,1 @@
+export { CardVehicle } from './CardVehicle';

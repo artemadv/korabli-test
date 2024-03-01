@@ -1,0 +1,42 @@
+@import url('../../styles/mixins/media.css');
+
+@mixin mediaStyles($class) {
+    @for $i from 1 to 12 {
+        &_size_$(class)-$(i) {
+            width: calc((100% * $(i)) / 12);
+        }
+
+        &_order_$(class)-$(i) {
+            order: $(i);
+        }
+    }
+}
+
+.col {
+    padding-left: var(--indent-10);
+    padding-right: var(--indent-10);
+    flex: 0 0 auto;
+    box-sizing: border-box;
+
+    &_order_default-initial {
+        order: initial;
+    }
+
+    @include mediaStyles(default);
+
+    @include mediaMobile() {
+        @include mediaStyles(mediaMobile);
+    }
+
+    @include mediaTablet() {
+        @include mediaStyles(mediaTablet);
+    }
+
+    @include mediaDesktop() {
+        @include mediaStyles(mediaDesktop);
+    }
+
+    @include mediaDesktopLarge() {
+        @include mediaStyles(mediaDesktopLarge);
+    }
+}
